@@ -11,63 +11,71 @@
 </head>
 <body>
     <header>
-        <div class="header">
-            <div class="header__logo">
-                <h1 class="title">Alipres</h1>
-                <h2 class="subtitle">Cargo</h2>
+        <div class="header__container">
+            <div class="header">
+                <a href="#" class="header__logo">
+                    <h1 class="title">Alipres</h1>
+                    <h2 class="subtitle">Cargo</h2>
+                </a>
+                <div class="header__buttons">
+                    <button class="header__button header__button_login">
+                        <a href="#" class="header__link">Login</a>
+                    </button>
+                    <button class="header__button header__button_join">
+                        <a href="#" class="header__link">Join us</a>
+                    </button>
+                </div>
             </div>
-            <div class="header__buttons">
-                <button class="header__button header__button_login">
-                    Login
-                </button>
-                <button class="header__button header__button_join">
-                    Join us
-                </button>
-            </div>
-        </div>
-        <div class="main">
-            <div class="main__moto">
-                <p class="main__text">Ship your package anywhere. Simple, easy and fast.</p>
-            </div>
-            <div class="form">
-                <form action="" class="block">
-                    <p class="form__title"></p>
-                    <div class="form__block">
-                        <div class="form_content">
-                            <div class="form__caption"></div>
-                            <div class="form__input-wrap">
-                                <div class="form__img fa-solid fa-plane-departure">
+            <div class="main">
+                <div class="main__moto">
+                    <p class="main__text">Ship your package anywhere. Simple, easy and fast.</p>
+                </div>
+                <div class="main__form form-header">
+                    <form action="" class="block">
+                        <p class="form__title">Where do you want to send</p>
+                        <div class="form__block">
+                            <div class="form_content">
+                                <div class="form__input-item">
+                                    <div class="form__caption">Pick up address</div>
+                                    <div class="form__input-wrap">
+                                        <label for="input1" class="form__img fa-solid fa-plane-departure"></label>
+                                        <input type="text" class="form_input" value="Av. Getulio" id="input1">
+                                    </div>
                                 </div>
-                                <input type="text" class="form_input">
-                            </div>
-                            
-                            <div class="form__caption"></div>
-                            <div class="form__input-wrap">
-                                <div class="form__img fa-solid fa-plane-arrival">
+                                
+                                <div class="form__input-item">
+                                    <div class="form__caption">Delivery address</div>
+                                    <div class="form__input-wrap">
+                                        <label for="input2" class="form__img fa-solid fa-plane-arrival"></label>
+                                        <input type="text" class="form_input" value="Av. Getulio" id="input2">
+                                    </div>
                                 </div>
-                                <input type="text" class="form_input">
-                            </div>
 
-                            <div class="form__caption"></div>
-                            <div class="form__input-wrap">
-                                <div class="form__img fa-solid fa-box-archive">
+                                <div class="form__input-item">
+                                    <div class="form__caption">Parcel details</div>
+                                    <div class="form__input-wrap">
+                                        <label for="input3" class="form__img fa-solid fa-box-archive"></label>
+                                        <input type="text" class="form_input" value="1 PCS 3 LBS USD 66.00" id="input3">
+                                    </div>
                                 </div>
-                                <input type="text" class="form_input">
-                            </div>
 
-                            <div class="form__caption"></div>
-                            <div class="form__input-wrap">
-                                <div class="form__img fa-solid fa-calendar-day">
+                                <div class="form__input-item">
+                                    <div class="form__caption">Ship date</div>
+                                    <div class="form__input-wrap">
+                                        <label for="input4" class="form__img fa-solid fa-calendar-day"></label>
+                                        <input type="text" class="form_input" value="Jul 09, 2021" id="input4">
+                                    </div>
                                 </div>
-                                <input type="text" class="form_input">
                             </div>
                         </div>
-                    </div>
-                    <button class="form__button">
-                        <div class="form__img"></div>
-                        <input type="submit" value="Search" class="form_submit">
-                    </button>
-                </form>
+                        <div class="form__footer">
+                            <button type="submit" class="form__button">
+                                <div class="form__img-submit fa-solid fa-magnifying-glass"></div>
+                                Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </header>

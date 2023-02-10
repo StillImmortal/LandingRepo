@@ -4,25 +4,36 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
+    height: 810px;
+    font-family: 'Inter', sans-serif;
     background-image: url(/img/alipres_beach.png);
     background-size: cover;
-    height: 80vh;
-    font-family: 'Inter', sans-serif;
+}
+
+.header__container {
+    max-width: 1300px;
+    padding: 30px;
+    padding-top: 20px;
+    margin: 0px auto;
 }
 
 .header {
-    width: 75%;
-    padding-top: 20px;
-    margin: 0px auto;
     display: flex;
+    flex: 0 0 200px;
     justify-content: space-between;
+    align-items: center;
+    margin-right: 75px;
+    gap: 15px;
 }
 
 .header__logo {
     text-align: center;
     text-transform: uppercase;
-    color: ;
 }
 
 .title {
@@ -41,12 +52,11 @@ header {
     height: 50px;
     width: 325px;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .header__button {
-    font-size: 16px;
     text-align: center;
-    color: white;
     border-radius: 4px;
 }
 
@@ -55,14 +65,122 @@ header {
     background-color: transparent;
 }
 
+.header__button_login:hover {
+    cursor: pointer;
+    background-color: hwb(196 31% 7% / 0.62);
+}
+
 .header__button_join {
     border: 1px solid transparent;
     background-color: #593DE4;
 }
 
+.header__button_join:hover {
+    cursor: pointer;
+    background-color: hwb(250 35% 6%);
+}
 
+.header__link {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    height: 430px;
+    margin-top: 100px;
+}
+
+.main__moto {
+    width: 525px;
+    font-size: 50px;
+    color: white;
+}
+
+.form-header {
+    height: 100%;
+    width: 630px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.block {
+    margin: 55px 25px;
+}
+
+.form__caption {
+    font-size: 12px;
+    color: #593DE4;
+}
+
+.form_content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: repeat(2, 95px);
+    gap: 20px;
+}
+
+.form__input-item {
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.form__input-wrap {
+    background-color: #EFEFEF;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 25px;
+}
 
 .form__img {
-    color: gray;
-    font-size: 20px;
+    color: #888888;
+    font-size: 14px;
 }
+
+.form_input {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+}
+
+.form__footer {
+    display: flex;
+    justify-content: end;
+}
+
+.form__button {
+    margin-top: 15px;
+    width: 190px;
+    height: 50px;
+    background-color: #593DE4;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+}
+
+.form__button:hover {
+    background-color: hwb(250 35% 6%);
+    cursor: pointer;
+}
+
+
+.form__button {
+    color: white;
+    font-size: 14px;
+}
+
